@@ -6,6 +6,10 @@ function preload(){
 function setup() {
     var canvas = createCanvas(400, 400);
     canvas.parent('sketch-div');
+
+}
+
+function draw(){
     image(img,0,0);
     loadPixels();
     for (let j = 0; j < 400; j++) {
@@ -19,5 +23,4 @@ function setup() {
         }
     }
     updatePixels();
-    console.log(mouseX)
 }
