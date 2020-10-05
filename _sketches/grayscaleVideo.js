@@ -13,3 +13,8 @@ function vidLoad(){
     vid.loop();
     vid.volume(0);
 }
+
+function draw() {
+    image(createCapture(vid), 0, 0);
+    filter(THRESHOLD);
+}
