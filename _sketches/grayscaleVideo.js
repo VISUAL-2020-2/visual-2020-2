@@ -12,11 +12,5 @@ function setup() {
 function vidLoad(){
     vid.loop();
     vid.volume(0);
-}
-
-function draw() {
-    capture = createCapture(vid);
-    capture.hide();
-    image(capture, 0, 0);
-    filter(THRESHOLD);
+    vid.filter(THRESHOLD);
 }
