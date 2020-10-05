@@ -12,7 +12,7 @@ function setup() {
 
 function draw(){
     image(vid, 0, 0);
-    filter(GRAY);
+    filter(THRESHOLD);
 }
 
 function vidLoad(){
