@@ -24,6 +24,7 @@ function draw() {
     image(img,0,0);
     loadPixels();
     let d = pixelDensity();
+    console.log(d)
     for (let i = 0; i < d; i++) {
         for (let j = 0; j < Math.max(Math.min(mouseX, d), 0); j++) {
             // loop over
@@ -35,6 +36,6 @@ function draw() {
             }
         }
     }
-    console.log(mouseY)
+    console.log(mouseX)
     updatePixels();
 }
