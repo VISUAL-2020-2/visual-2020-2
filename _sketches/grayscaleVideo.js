@@ -1,11 +1,11 @@
-let vid;
-var tresshold = 50, capture;
+var vid, tresshold = 50, capture;
 
 function preload() {
     vid = createVideo('data/video-sample.webm', vidLoad);
 }
 
 function setup() {
+    noCanvas();
     vid.parent('sketch-div');
 }
 
@@ -15,7 +15,8 @@ function vidLoad(){
 }
 
 function draw() {
-    clear()
-    image(createCapture(vid), 0, 0);
+    capture = createCapture(vid);
+    capture.hide();
+    image(capture, 0, 0);
     filter(THRESHOLD);
 }
