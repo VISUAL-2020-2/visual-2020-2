@@ -12,7 +12,6 @@ function setup() {
 function draw() {
     image(img,0,0);
     loadPixels();
-    text("aqui pondria mi framrate si tuviera uno", 10, 10);
     for (let j = 0; j < 400; j++) {
         for (let i = 0; i < Math.max(Math.min(mouseX, 400), 0); i++) {
             index = 4 * ((j) * 400 + (i));
@@ -25,4 +24,5 @@ function draw() {
         }
     }
     updatePixels();
+    text("aqui pondria mi framrate si tuviera uno", 300, 300);
 }
