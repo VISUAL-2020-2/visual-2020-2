@@ -12,6 +12,10 @@ function setup() {
     noStroke();
     fill(0);
     vid.hide();
+}
+
+function draw() {
+    vid.loadPixels();
     for (let i = 0; i < pixels.length; i += 4) {
         let c = color(pixels[i], pixels[i + 1], pixels[i + 2])
         console.log(brightness(c));
@@ -21,8 +25,4 @@ function setup() {
             pixels[i] = pixels[i + 1] = pixels[i + 2] = 255;
         }
     }
-}
-
-function draw() {
-    vid.loadPixels();
 }
