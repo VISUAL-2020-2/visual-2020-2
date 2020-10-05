@@ -1,7 +1,7 @@
 var tresshold = 128
 var img
 function preload(){
-    img = loadImage("data/descarga.png");
+    img = loadImage("data/download.jpg");
 }
 
 function setup() {
