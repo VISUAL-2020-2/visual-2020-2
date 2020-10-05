@@ -28,7 +28,7 @@ function draw() {
         for (let j = 0; j < d; j++) {
             // loop over
             index = 4 * ((j) * width * d + (i));
-            if (brightness(c) < tresshold) {
+            if (brightness(color(pixels[index],pixels[index + 1],pixels[index + 2])) < tresshold) {
                 pixels[index] = pixels[index + 1] = pixels[index + 2] = 0;
             } else {
                 pixels[index] = pixels[index + 1] = pixels[index + 2] = 255;
