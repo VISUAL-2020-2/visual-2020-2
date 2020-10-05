@@ -9,3 +9,5 @@ Here we have a grayscale filter:
 <!-- Necessary element to position p5 canvas -->
 <div id="sketch-div"></div>
 
+<div id="data-div"></div>
+
