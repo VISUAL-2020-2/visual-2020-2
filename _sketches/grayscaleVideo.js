@@ -8,7 +8,7 @@ function preload() {
 
 function setup() {
     let canvas = createCanvas(600, 600);
-    canvas.parent('sketch-div');
+    canvas.parent('videos-div');
 }
 
 function draw() {
