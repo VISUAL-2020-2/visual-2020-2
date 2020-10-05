@@ -16,7 +16,7 @@ function draw() {
     for (let j = 0; j < 400; j++) {
         for (let i = 0; i < Math.max(Math.min(mouseX, 400), 0); i++) {
             // loop over
-            index = 4 * ((j) * 400 *  + (i));
+            index = 4 * ((j) * 400 + (i));
             try {
                 if (brightness(color(pixels[index],pixels[index + 1],pixels[index + 2])) < tresshold) {
                     pixels[index] = pixels[index + 1] = pixels[index + 2] = 0;
