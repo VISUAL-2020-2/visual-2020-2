@@ -15,6 +15,7 @@ function vidLoad(){
 }
 
 function draw() {
+    clear()
     image(createCapture(vid), 0, 0);
     filter(THRESHOLD);
 }
