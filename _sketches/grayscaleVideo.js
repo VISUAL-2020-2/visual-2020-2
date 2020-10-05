@@ -7,10 +7,10 @@ function preload() {
 function setup() {
     var canvas = createCanvas(400, 400);
     canvas.parent('sketch-div');
-    vid.loop();
 }
 
 function draw() {
+    vid.loop();
     image(vid, 0, 0);
     vid.loadPixels();
     for (let j = 0; j < 400; j++) {
@@ -24,5 +24,5 @@ function draw() {
 
         }
     }
-    updatePixels();
+    vid.updatePixels();
 }

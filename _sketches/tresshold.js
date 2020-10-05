@@ -11,6 +11,7 @@ function setup() {
 }
 
 function draw() {
+    clear()
     image(img, 0, 0);
     loadPixels();
     for (let j = 0; j < 400; j++) {
