@@ -16,7 +16,7 @@ function draw() {
     for (let j = 0; j < 400; j++) {
         for (let i = 0; i < Math.max(Math.min(mouseX, 400), 0); i++) {
             index = 4 * ((j) * 400 + (i));
-            let c = (0.2126 * pixels[index] + 0.7152 * pixels[index + 1] + 0.0722 * pixels[index + 2]) / 3;
+            let c = (0.2126 * pixels[index] + 0.7152 * pixels[index + 1] + 0.0722 * pixels[index + 2]);
             pixels[index] = c;
             pixels[index + 1] = c;
             pixels[index + 2] = c;
