@@ -31,7 +31,7 @@ let temp = (sketch) => {
 
 function gray(m, r, g, b) {
     if (m) {
-        return (0.2126 * r + 0.7152 * g + 0.0722 * b) / 3
+        return (0.2126 * r + 0.7152 * g + 0.0722 * b);
     } else {
         return (r + g + b) / 3;
     }
