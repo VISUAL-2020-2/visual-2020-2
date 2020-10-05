@@ -5,7 +5,6 @@ function preload() {
 }
 
 function setup() {
-    noCanvas();
     vid.parent('sketch-div');
 }
 
