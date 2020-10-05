@@ -17,11 +17,14 @@ function draw() {
         for (let j = 0; j < Math.max(Math.min(mouseX, 400), 0); j++) {
             // loop over
             index = 4 * ((j) * 400 *  + (i));
-            if (brightness(color(pixels[index],pixels[index + 1],pixels[index + 2])) < tresshold) {
-                pixels[index] = pixels[index + 1] = pixels[index + 2] = 0;
-            } else {
-                pixels[index] = pixels[index + 1] = pixels[index + 2] = 255;
-            }
+            try {
+                if (brightness(color(pixels[index],pixels[index + 1],pixels[index + 2])) < tresshold) {
+                    pixels[index] = pixels[index + 1] = pixels[index + 2] = 0;
+                } else {
+                    pixels[index] = pixels[index + 1] = pixels[index + 2] = 255;
+                }
+            } catch (e){}
+
         }
     }
     console.log(Math.max(Math.min(mouseX, 400), 0))
