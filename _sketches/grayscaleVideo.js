@@ -10,8 +10,8 @@ function setup() {
 }
 
 function draw() {
-    vid.loop();
     image(vid, 0, 0);
+    vid.loop();
     vid.loadPixels();
     for (let j = 0; j < 400; j++) {
         for (let i = 0; i < Math.max(Math.min(mouseX, 400), 0); i++) {
@@ -24,5 +24,4 @@ function draw() {
 
         }
     }
-    vid.updatePixels();
 }
