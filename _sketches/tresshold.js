@@ -25,10 +25,10 @@ function draw() {
     loadPixels();
     let d = pixelDensity();
     console.log(d)
-    for (let i = 0; i < d; i++) {
-        for (let j = 0; j < Math.max(Math.min(mouseX, d), 0); j++) {
+    for (let i = 0; i < 300; i++) {
+        for (let j = 0; j < Math.max(Math.min(mouseX, 300), 0); j++) {
             // loop over
-            index = 4 * ((j) * width * d + (i));
+            index = 4 * ((j) * width *  + (i));
             if (brightness(color(pixels[index],pixels[index + 1],pixels[index + 2])) < tresshold) {
                 pixels[index] = pixels[index + 1] = pixels[index + 2] = 0;
             } else {
@@ -36,6 +36,6 @@ function draw() {
             }
         }
     }
-    console.log(mouseX)
+    console.log(Math.max(Math.min(mouseX, 300), 0))
     updatePixels();
 }
