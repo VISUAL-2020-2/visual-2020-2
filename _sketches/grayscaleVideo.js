@@ -9,7 +9,9 @@ function setup() {
     var canvas = createCanvas(400, 400, WEBGL);
     canvas.parent('sketch-div');
     vid.loop();
-    loadPixels();
+    noStroke();
+    fill(0);
+    vid.hide();
     for (let i = 0; i < pixels.length; i += 4) {
         let c = color(pixels[i], pixels[i + 1], pixels[i + 2])
         console.log(brightness(c));
@@ -19,5 +21,8 @@ function setup() {
             pixels[i] = pixels[i + 1] = pixels[i + 2] = 255;
         }
     }
-    updatePixels();
+}
+
+function draw() {
+    vid.loadPixels();
 }
