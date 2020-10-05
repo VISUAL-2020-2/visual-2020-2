@@ -7,5 +7,5 @@ Here we have a grayscale filter:
 <!-- Sketch file location, (pending organization) -->
 <script src="grayscaleVideo.js"></script>
 <!-- Necessary element to position p5 canvas -->
-<div id="videos-div"></div>
+<div id="sketch-div"></div>
 
