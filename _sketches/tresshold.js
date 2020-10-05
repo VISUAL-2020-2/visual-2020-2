@@ -1,11 +1,11 @@
 var tresshold = 70
-var img
+var img, canvas
 function preload(){
     img = loadImage("data/download.jpg");
 }
 
 function setup() {
-    var canvas = createCanvas(400, 400);
+    canvas = createCanvas(400, 400);
     canvas.parent('sketch-div');
     image(img,0,0);
     loadPixels();
@@ -15,6 +15,24 @@ function setup() {
             pixels[i] = pixels[i + 1] = pixels[i + 2] = 0;
         } else {
             pixels[i] = pixels[i + 1] = pixels[i + 2] = 255;
+        }
+    }
+    updatePixels();
+    frameRate(30);
+}
+
+function draw() {
+    image(img,0,0);
+    loadPixels();
+    let d = pixelDensity();
+    for (let i = 0; i < Math.min(d, mouseY); i++) {
+        for (let j = 0; j < d; j++) {
+            // loop over
+            index = 4 * ((y * d + j) * width * d + (x * d + i));
+            pixels[index] = r;
+            pixels[index+1] = g;
+            pixels[index+2] = b;
+            pixels[index+3] = a;
         }
     }
     updatePixels();
