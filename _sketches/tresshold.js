@@ -13,8 +13,8 @@ function setup() {
 function draw() {
     image(img,0,0);
     loadPixels();
-    for (let i = 0; i < 400; i++) {
-        for (let j = 0; j < Math.max(Math.min(mouseX, 400), 0); j++) {
+    for (let j = 0; j < 400; j++) {
+        for (let i = 0; i < Math.max(Math.min(mouseX, 400), 0); i++) {
             // loop over
             index = 4 * ((j) * 400 *  + (i));
             try {
@@ -27,6 +27,5 @@ function draw() {
 
         }
     }
-    console.log(Math.max(Math.min(mouseX, 400), 0))
     updatePixels();
 }
