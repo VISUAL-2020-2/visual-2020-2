@@ -27,7 +27,7 @@ function draw() {
     for (let i = 0; i < Math.min(d, mouseY); i++) {
         for (let j = 0; j < d; j++) {
             // loop over
-            index = 4 * ((y * d + j) * width * d + (x * d + i));
+            index = 4 * ((j) * width * d + (i));
             pixels[index] = r;
             pixels[index+1] = g;
             pixels[index+2] = b;
