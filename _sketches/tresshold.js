@@ -18,7 +18,6 @@ function setup() {
         }
     }
     updatePixels();
-    frameRate(30);
 }
 
 function draw() {
@@ -35,5 +34,6 @@ function draw() {
             pixels[index+3] = a;
         }
     }
+    console.log(mouseY)
     updatePixels();
 }
