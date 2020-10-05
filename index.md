@@ -18,7 +18,7 @@ The source code for this Jekyll site and all experiments shown can be found in
 ---
 
 Team:
-- Nicolás Felipe Gavilán
+- Nicolás Felipe Gavilán [nfgavilans](https://github.com/nfgavilans)
 - María Alejandra Robayo [marobayos](https://github.com/marobayos)
 - Diego Alejandro Rodríguez
 - Diego Alejandro Salgado
