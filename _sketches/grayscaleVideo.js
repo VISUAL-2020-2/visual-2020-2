@@ -13,5 +13,5 @@ function setup() {
 
 function draw() {
     background(150);
-    image(div, 10, 10); // draw the video frame to canvas
+    image(vid, 10, 10); // draw the video frame to canvas
 }
