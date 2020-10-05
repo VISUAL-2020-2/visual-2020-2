@@ -1,5 +1,7 @@
-function preload() {
-  img = loadImage("data/conv2.png");
+var tresshold = 128
+var img
+function preload(){
+    img = loadImage("data/conv2.png");
 }
 
 function setup() {
@@ -8,8 +10,7 @@ function setup() {
 
 }
 
-function draw(){   
-    /*
+function draw(){
     img.loadPixels();
     for (let i = 0; i < pixels.length; i+=4) {
         let c = color(pixels[i], pixels[i + 1], pixels[i + 2], pixels[i + 3])
@@ -19,7 +20,6 @@ function draw(){
             pixels[i] = pixels[i + 1] = pixels[i + 2] = 255;
         }
     }
-    updatePixels();
-    */
+    img.updatePixels();
     image(img,0,0)
 }
