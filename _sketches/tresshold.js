@@ -27,11 +27,12 @@ function draw() {
     for (let i = 0; i < Math.min(d, mouseY); i++) {
         for (let j = 0; j < d; j++) {
             // loop over
-            index = 4 * ((y * d + j) * width * d + (x * d + i));
-            pixels[index] = r;
-            pixels[index+1] = g;
-            pixels[index+2] = b;
-            pixels[index+3] = a;
+            index = 4 * ((j) * width * d + (i));
+            if (brightness(color(pixels[index],pixels[index + 1],pixels[index + 2])) < tresshold) {
+                pixels[index] = pixels[index + 1] = pixels[index + 2] = 0;
+            } else {
+                pixels[index] = pixels[index + 1] = pixels[index + 2] = 255;
+            }
         }
     }
     console.log(mouseY)
