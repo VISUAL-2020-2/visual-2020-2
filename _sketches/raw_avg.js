@@ -19,4 +19,5 @@ function setup() {
         }
     }
     updatePixels();
+    console.log(mouseX)
 }
