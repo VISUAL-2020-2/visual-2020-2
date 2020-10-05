@@ -12,5 +12,5 @@ function setup() {
 function vidLoad(){
     vid.loop();
     vid.volume(0);
-    vid.filter(THRESHOLD);
+    filter(THRESHOLD);
 }
