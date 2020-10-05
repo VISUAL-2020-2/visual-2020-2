@@ -7,7 +7,10 @@ function preload() {
 function setup() {
     var canvas = createCanvas(400, 400);
     canvas.parent('sketch-div');
-    fingers.hide();
+}
+
+function draw() {
+    image(vid, 0, 0); // draw the video frame to canvas
     vid.loop();
     vid.loadPixels();
     for (let j = 0; j < 400; j++) {
@@ -21,8 +24,5 @@ function setup() {
 
         }
     }
-}
-
-function draw() {
-    image(vid, 0, 0); // draw the video frame to canvas
+    updatePixels();
 }
