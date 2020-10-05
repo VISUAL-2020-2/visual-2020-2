@@ -24,5 +24,5 @@ function draw() {
         }
     }
     updatePixels();
-    text("aqui pondria mi framrate si tuviera uno", 300, 300);
+    text("Framerate: "+frameRate(), 0, 300);
 }
