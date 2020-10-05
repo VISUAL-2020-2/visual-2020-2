@@ -1,28 +1,16 @@
-var tresshold = 70
-var vid
-
-function preload() {
-    vid = createVideo(['data/video-sample.webm']);
-}
+let vid;
 
 function setup() {
-    var canvas = createCanvas(400, 400, WEBGL);
-    canvas.parent('sketch-div');
-    vid.hide();
-    vid.loop();
-    vid.loadPixels();
-    for (let i = 0; i < pixels.length; i += 4) {
-        let c = color(pixels[i], pixels[i + 1], pixels[i + 2])
-        console.log(brightness(c));
-        if (brightness(c) < tresshold) {
-            pixels[i] = pixels[i + 1] = pixels[i + 2] = 0;
-        } else {
-            pixels[i] = pixels[i + 1] = pixels[i + 2] = 255;
-        }
-    }
+    createCanvas(400, 400);
+    // specify multiple formats for different browsers
+    fingers = createVideo(['data/video-sample.webm']);
+    fingers.hide(); // by default video shows up in separate dom
+    fingers.loop();
+    // element. hide it and draw it to the canvas
+    // instead
 }
 
 function draw() {
     background(150);
-    image(vid, 10, 10);
+    image(fingers, 10, 10); // draw the video frame to canvas
 }
