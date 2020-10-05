@@ -13,13 +13,13 @@ function setup() {
 
 function draw() {
     image(vid, 0, 0);
-    vid.loadPixels();
+    loadPixels();
     for (let j = 0; j < pixels.length; j++) {
-        index = 4 * ((j) * pixels.length + (i));
-        if (brightness(color(pixels[index], pixels[index + 1], pixels[index + 2])) < tresshold) {
-            pixels[index] = pixels[index + 1] = pixels[index + 2] = 0;
+        if (brightness(color(pixels[i], pixels[i + 1], pixels[i + 2])) < tresshold) {
+            pixels[i] = pixels[i + 1] = pixels[i + 2] = 0;
         } else {
-            pixels[index] = pixels[index + 1] = pixels[index + 2] = 255;
+            pixels[i] = pixels[i + 1] = pixels[i + 2] = 255;
         }
     }
+    updatePixels();
 }
