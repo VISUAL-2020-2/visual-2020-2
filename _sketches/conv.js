@@ -1,5 +1,5 @@
 function preload() {
-  img = loadImage("data/conv2.jpg");
+  img = loadImage("data/descarga.jpg");
 }
 
 
