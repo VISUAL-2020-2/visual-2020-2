@@ -2,7 +2,6 @@
 function setup() {
   var canvas = createCanvas(400, 400); // Keep canvas reference
   canvas.parent('sketch-div'); // Necessary to position canvas
-  frameRate(30);
 }
 
 function draw() {

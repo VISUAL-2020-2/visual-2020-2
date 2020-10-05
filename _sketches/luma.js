@@ -11,6 +11,7 @@ function setup() {
 function draw(){
     image(img,0,0);
     loadPixels();
+    text(frameRate(), 10, 10);
     for (let j = 0; j < 400; j++) {
         for (let i = 0; i < Math.max(Math.min(mouseX, 400), 0); i++) {
             index = 4 * ((j) * 400 + (i));
