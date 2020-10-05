@@ -1,7 +1,8 @@
 let vid;
 
 function setup() {
-    createCanvas(400, 400);
+    var canvas = createCanvas(400, 400, WEBGL);
+    canvas.parent('sketch-div');
     // specify multiple formats for different browsers
     vid = createVideo(['data/video-sample.webm']);
     vid.hide(); // by default video shows up in separate dom
@@ -12,5 +13,5 @@ function setup() {
 
 function draw() {
     background(150);
-    image(div, 10, 10); // draw the video frame to canvas
+    image(vid, 10, 10); // draw the video frame to canvas
 }
