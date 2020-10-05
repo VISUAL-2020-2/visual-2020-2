@@ -1,4 +1,4 @@
-var img
+var img;
 function preload() {
     img = loadImage("data/descarga.jpg");
 }
@@ -16,11 +16,10 @@ function draw() {
     for (let j = 0; j < 400; j++) {
         for (let i = 0; i < Math.max(Math.min(mouseX, 400), 0); i++) {
             index = 4 * ((j) * 400 + (i));
-            let c = color((pixels[index] + pixels[index + 1] + pixels[index + 2]) / 3);
-            pixels[index] = red(c);
-            pixels[index + 1] = green(c);
-            pixels[index + 2] = blue(c);
-
+            let c = (pixels[index] + pixels[index + 1] + pixels[index + 2]) / 3; // avoid p5.Color
+            pixels[index] = c;
+            pixels[index + 1] = c;
+            pixels[index + 2] = c;
         }
     }
     updatePixels();
