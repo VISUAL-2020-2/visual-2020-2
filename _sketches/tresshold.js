@@ -24,8 +24,8 @@ function draw() {
     image(img,0,0);
     loadPixels();
     let d = pixelDensity();
-    for (let i = 0; i < Math.min(d, mouseY); i++) {
-        for (let j = 0; j < d; j++) {
+    for (let i = 0; i < d; i++) {
+        for (let j = 0; j < Math.max(Math.min(mouseX, d), 0); j++) {
             // loop over
             index = 4 * ((j) * width * d + (i));
             if (brightness(color(pixels[index],pixels[index + 1],pixels[index + 2])) < tresshold) {
