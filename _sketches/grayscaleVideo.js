@@ -1,5 +1,5 @@
 let vid;
-var tresshold = 50
+var tresshold = 50, capture;
 
 function preload() {
     vid = createVideo(['data/video-sample.webm']);
@@ -12,9 +12,12 @@ function setup() {
 }
 
 function draw() {
-    image(vid, 0, 0);
+    capture = createCapture(vid);
+    capture.hide();
+    image(capture, 0, 0);
     loadPixels();
-    for (let j = 0; j < pixels.length; j++) {
+    noStroke();
+    for (let j = 0; j < pixels.length; j+=4) {
         if (brightness(color(pixels[i], pixels[i + 1], pixels[i + 2])) < tresshold) {
             pixels[i] = pixels[i + 1] = pixels[i + 2] = 0;
         } else {
