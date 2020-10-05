@@ -11,7 +11,7 @@ function setup() {
     for (let j = 0; j < 400; j++) {
         for (let i = 0; i < Math.max(Math.min(mouseX, 400), 0); i++) {
             index = 4 * ((j) * 400 + (i));
-            let c = color((pixels[i] + pixels[i + 1] +  pixels[i + 2])/3);
+            let c = color((pixels[index] + pixels[index + 1] +  pixels[index + 2])/3);
             pixels[index] = red(c);
             pixels[index + 1] = green(c);
             pixels[index + 2] = blue(c);
