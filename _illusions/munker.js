@@ -28,7 +28,7 @@ function draw() {
     rect(i, 200, 6, 200);
   }
   if (!x){
-    newCircles();
+    canvas.newCircles();
   }
 }
 
