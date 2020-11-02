@@ -11,7 +11,7 @@ Las ilusiones están resumidas en la siguiente tabla:
 |[Muller-Lyer dinámica](https://visual-2020-2.github.io/illusions/muller2.html)|Geométrica con movimiento|[Referencia](https://en.wikipedia.org/wiki/Müller-Lyer_illusion)|No aplica|[Código](https://github.com/VISUAL-2020-2/visual-2020-2.github.io/blob/master/_illusions/muller2.js)|
 |[Munker-White](https://visual-2020-2.github.io/illusions/munkerwhite.html)|Cromática|[Referencia](https://en.wikipedia.org/wiki/White%27s_illusion)|Click para revelar|[Código](https://github.com/VISUAL-2020-2/visual-2020-2.github.io/blob/master/_illusions/munker.js)|
 |[Primrose Field](https://visual-2020-2.github.io/illusions/primrose.html)|Geométrica|[Referencia](https://blogs.brown.edu/sarahabdellahneuroscience/2016/08/24/primroses-field-optical-illusion/)|No aplica|[Código](https://github.com/VISUAL-2020-2/visual-2020-2.github.io/blob/master/_illusions/primrose.js)|
-|[Stepping Feet](https://visual-2020-2.github.io/illusions/steppingFeet.html)|Geométrica y Cromática|[Referencia](https://en.wikipedia.org/wiki/Stepping_feet_illusion)|Click para revelar|[Código](https://github.com/VISUAL-2020-2/visual-2020-2.github.io/blob/master/_illusions/steppingFeet.js)|
+|[Stepping Feet](https://visual-2020-2.github.io/illusions/steppingFeet.html)|Geométrica|[Referencia](https://en.wikipedia.org/wiki/Stepping_feet_illusion)|Click para revelar|[Código](https://github.com/VISUAL-2020-2/visual-2020-2.github.io/blob/master/_illusions/steppingFeet.js)|
 |         |           |            |                                    |                             |
 
 <!-- Sketch file location, (pending organization) -->
