@@ -19,8 +19,13 @@ function draw() {
     console.log("X: "+ (newx * 0.005));
     console.log("Y: "+ (newy * 0.005));
     clear();
-    rotateX(newx * 0.005);
-    rotateY(newy * 0.005);
+    if(newx*newx > 4000 || newx*newx > 4000){
+        rotateX(0.5425);
+        rotateY(-0.802833251953125);
+    } else {
+        rotateX(newx * 0.005);
+        rotateY(newy * 0.005);
+    }
     rotateZ(0);
     noStroke();
     drawBottom();
