@@ -1,6 +1,8 @@
 main:
   - title: "Sketches"
     url: /sketches/
+  - title: "Imaging"
+    url: /imaging/
   - title: "Illusions"
     url: /illusions/
   - title: "GitHub"

@@ -22,6 +22,8 @@ collections:
   sketches:
     output: true
     #permalink: /:collection/:name/
+  imaging:
+    output: true
   illusions:
     output: true
     #permalink: /:collection/:name/
@@ -38,6 +40,14 @@ defaults:
   - scope:
       path: ""
       type: sketches
+    values:
+      layout: single
+      author_profile: false
+      share: false
+  # _imaging
+  - scope:
+      path: ""
+      type: imaging
     values:
       layout: single
       author_profile: false

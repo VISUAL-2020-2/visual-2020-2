@@ -12,6 +12,8 @@ The source code for this Jekyll site and all experiments shown can be found in
 - [Home](/) `YOU ARE HERE`
 - [Sketches](/sketches)\
   General sketches for all class workshops.
+- [Imaging](/imaging)\
+  Image analysis sketches.
 - [Optical Illusions](/illusions)\
   Interesting optical illusions.
 
