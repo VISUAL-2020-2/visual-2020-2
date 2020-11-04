@@ -4,7 +4,7 @@ function setup() {
     canvas.parent('sketch-div'); // Necessary to position canvas
     fill(237, 34, 93);
     background(200);
-    beginShape();
+    beginShape(QUADS);
     vertex(0, 0, 0);
     vertex(0, 0, 100);
     vertex(0, 100, 100);
