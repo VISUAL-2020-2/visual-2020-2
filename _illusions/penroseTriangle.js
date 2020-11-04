@@ -22,6 +22,7 @@ function draw() {
     vertex(40,  0,  50);
     vertex(50,  0,  50);
     vertex(50,  0,  0);
+    vertex(0,   0,  0);
     endShape(CLOSE);
 
     fill('#848484');
