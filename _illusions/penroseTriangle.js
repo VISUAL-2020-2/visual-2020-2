@@ -7,8 +7,8 @@ function setup() {
 function draw() {
     console.log(frameCount * 0.01);
     clear();
-    rotateX(1);
-    rotateY(frameCount * 0.01);
+    rotateX(mouseX);
+    rotateY(mousey);
     rotateZ(0);
 
     fill('#424242');
