@@ -11,41 +11,45 @@ function draw() {
     rotateZ(frameCount * 0.01);
 
     fill('#424242');
+    noStroke();
     beginShape();
     vertex(0,   0,  0);
-    vertex(0,   0,  10);
-    vertex(40,  0,  10);
-    vertex(40,  0,  50);
-    vertex(50,  0,  50);
-    vertex(50,  0,  0);
+    vertex(0,   0,  20);
+    vertex(80,  0,  20);
+    vertex(80,  0,  100);
+    vertex(100,  0,  100);
+    vertex(100,  0,  0);
     vertex(0,   0,  0);
     endShape(CLOSE);
 
     fill('#848484');
+    noStroke();
     beginShape();
-    vertex(0,   0,  10);
-    vertex(50,  0,  10);
-    vertex(50,  10, 10);
-    vertex(10,  10, 10);
-    vertex(10,  50, 10);
-    vertex(0,   50, 10);
-    vertex(0,    0, 10);
+    vertex(0,   0,  20);
+    vertex(100,  0,  20);
+    vertex(100,  20, 20);
+    vertex(20,  20, 20);
+    vertex(20,  100, 20);
+    vertex(0,   100, 20);
+    vertex(0,    0, 20);
     endShape(CLOSE);
 
     fill('#c6c6c6');
+    noStroke();
     beginShape();
-    vertex(10,  50, 10);
-    vertex(10,  50,  0);
-    vertex(10,   0,  0);
-    vertex(10,   0, 10);
+    vertex(20,  100, 20);
+    vertex(20,  100,  0);
+    vertex(20,   0,  0);
+    vertex(20,   0, 20);
     endShape(CLOSE);
 
     fill('#c6c6c6');
+    noStroke();
     beginShape();
-    vertex(50,  10,  0);
-    vertex(50,   0,  0);
-    vertex(50,   0, 50);
-    vertex(50,  10, 50);
+    vertex(100,  20,  0);
+    vertex(100,   0,  0);
+    vertex(100,   0, 100);
+    vertex(100,  20, 100);
     endShape(CLOSE);
 }
 
