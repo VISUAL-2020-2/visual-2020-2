@@ -7,7 +7,7 @@ function setup() {
 function draw() {
     clear();
     rotateX(frameCount * 0.01);
-    rotateY(frameCount * 0.01);
+    rotateY(60);
     rotateZ(60);
 
     fill('#424242');
@@ -15,11 +15,15 @@ function draw() {
     beginShape();
     vertex(0,   0,  0);
     vertex(0,   0,  20);
-    vertex(80,  0,  20);
-    vertex(80,  0,  100);
-    vertex(100,  0,  100);
+    vertex(100,  0,  20);
+    vertex(100,  0, 0);
+    endShape();
+
+    beginShape();
+    vertex(80,  0,  0);
     vertex(100,  0,  0);
-    vertex(0,   0,  0);
+    vertex(100,  0,  100);
+    vertex(80,  0,  100);
     endShape();
 
     fill('#848484');
