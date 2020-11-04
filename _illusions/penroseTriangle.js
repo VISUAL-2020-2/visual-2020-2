@@ -13,13 +13,13 @@ function draw() {
     rotateZ(frameCount * 0.01);
     beginShape();
     vertex(0, 0, 0);
-    vertex(0, 100, 0);
-    vertex(100, 100, 0);
-    vertex(100, 0, 0);
-    vertex(0, 0, 300);
-    vertex(0, 100, 300);
-    vertex(100, 100, 300);
-    vertex(100, 0, 300);
+    vertex(0, 10, 0);
+    vertex(10, 10, 0);
+    vertex(10, 0, 0);
+    vertex(0, 0, 30);
+    vertex(0, 10, 30);
+    vertex(10, 10, 30);
+    vertex(10, 0, 30);
     endShape(CLOSE);
 }
 
