@@ -88,8 +88,8 @@ function drawRight(){
     beginShape();
     vertex(20,  0,   0);
     vertex(20,  0,   20);
-    vertex(20,  100,  20);
-    vertex(20,  100,  0);
+    vertex(20,  -80,  20);
+    vertex(20,  -80,  0);
     endShape(CLOSE);
 
     //Cara izquierda
@@ -97,8 +97,8 @@ function drawRight(){
     beginShape();
     vertex(0,  0,   0);
     vertex(0,  0,   20);
-    vertex(0,  100,  20);
-    vertex(0,  100,  0);
+    vertex(0,  -80,  20);
+    vertex(0,  -70,  0);
     endShape(CLOSE);
 
     //Cara superior
@@ -123,8 +123,8 @@ function drawRight(){
     fill(claro);
     beginShape();
     vertex(0,    0,  20);
-    vertex(0,   100,  20);
-    vertex(20,   100,  20);
+    vertex(0,   -80,  20);
+    vertex(20,   -80,  20);
     vertex(20,   0,  20);
     endShape(CLOSE);
 
@@ -133,8 +133,8 @@ function drawRight(){
     fill(rosa);
     beginShape();
     vertex(0,    0,  0);
-    vertex(0,   100,  0);
-    vertex(20,   100, 0);
+    vertex(0,   -80,  0);
+    vertex(20,   -80, 0);
     vertex(20,   0,  0);
     endShape(CLOSE);
 }
