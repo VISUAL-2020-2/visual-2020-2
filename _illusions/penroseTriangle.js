@@ -10,8 +10,8 @@ function draw() {
     rotateX(frameCount * 0.01);
     rotateY(frameCount * 0.01);
     rotateZ(frameCount * 0.01);
-    beginShape(TESS);
     fill('#424242');
+    beginShape(TESS);
     strokeWeight(3);
     // X Y Z
     vertex(0,   0,  0);
@@ -20,7 +20,18 @@ function draw() {
     vertex(40,  0,  50);
     vertex(50,  0,  50);
     vertex(50,  0,  0);
-    vertex(0,   0,  0);
-    endShape();
+    endShape(CLOSE);
+    fill('#848484');
+    beginShape(TESS);
+    strokeWeight(3);
+    // X Y Z
+    vertex(0,   0,  10);
+    vertex(50,  0,  10);
+    vertex(50,  10, 10);
+    vertex(10,  10, 10);
+    vertex(10,  50, 10);
+    vertex(0,   50, 10);
+    vertex(0,    0, 10);
+    endShape(CLOSE);
 }
 
