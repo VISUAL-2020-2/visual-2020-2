@@ -123,9 +123,9 @@ function drawRight(){
     fill(claro);
     beginShape();
     vertex(0,    0,  20);
-    vertex(0,   20,  20);
-    vertex(100,   20,  20);
-    vertex(100,   0,  20);
+    vertex(0,   100,  20);
+    vertex(20,   100,  20);
+    vertex(20,   0,  20);
     endShape(CLOSE);
 
 
@@ -133,8 +133,8 @@ function drawRight(){
     fill(rosa);
     beginShape();
     vertex(0,    0,  0);
-    vertex(0,   20,  0);
-    vertex(100,   20, 0);
-    vertex(100,   0,  0);
+    vertex(0,   100,  0);
+    vertex(20,   100, 0);
+    vertex(20,   0,  0);
     endShape(CLOSE);
 }
