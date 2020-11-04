@@ -63,7 +63,7 @@ function drawLeft(){
     fill(medio);
     beginShape();
     vertex(20,  0,   0);
-    vertex(20,  0,   30);
+    vertex(20,  0,   20);
     vertex(20,  -120,  30);
     vertex(20,  -120,  0);
     endShape(CLOSE);
@@ -102,7 +102,7 @@ function drawRight(){
     fill(oscuro);
     beginShape();
     vertex(80,   20,   0);
-    vertex(80,   20,   90);
+    vertex(80,   20,   70);
     vertex(100,  20,   90);
     vertex(100,  20,   0);
     endShape(CLOSE);
