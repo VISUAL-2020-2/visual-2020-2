@@ -11,6 +11,11 @@ function draw() {
     rotateX(frameCount * 0.01);
     rotateY(frameCount * 0.01);
     rotateZ(frameCount * 0.01);
-    box(80, 80, 80);
+    beginShape();
+    vertex(0, 0);
+    vertex(0, 100);
+    vertex(100, 100);
+    vertex(100, 0);
+    endShape(CLOSE);
 }
 
