@@ -9,7 +9,7 @@ function draw() {
     clear();
     rotateX(0);
     rotateY(frameCount * 0.01);
-    rotateZ(0);
+    rotateZ(1.5708);
 
     fill('#424242');
     noStroke();
