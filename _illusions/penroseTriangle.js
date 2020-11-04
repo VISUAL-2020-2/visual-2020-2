@@ -172,8 +172,8 @@ function drawRight(){
     fill(oscuro);
     beginShape();
     vertex(80,   20,   0);
-    vertex(80,   20,   100);
-    vertex(100,  20,   100);
+    vertex(80,   20,   90);
+    vertex(100,  20,   90);
     vertex(100,  20,   0);
     endShape(CLOSE);
 
