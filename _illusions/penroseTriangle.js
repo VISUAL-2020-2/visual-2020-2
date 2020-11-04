@@ -13,7 +13,7 @@ function setup() {
 
 function draw() {
     console.log("X: "+ (mouseX * 0.005));
-    console.log("Y: "+ (mouseY * 0.00));
+    console.log("Y: "+ (mouseY * 0.005));
     clear();
     rotateX(mouseX * 0.005);
     rotateY(mouseY * 0.005);
@@ -50,7 +50,7 @@ function drawBottom(){
     endShape(CLOSE)
 
     //Cara frontal
-    fill(claro);
+    fill(rosa);
     beginShape();
     vertex(0,    0,  20);
     vertex(0,   20,  20);
@@ -68,7 +68,7 @@ function drawBottom(){
     endShape(CLOSE)
 
     //Cara posterior
-    fill(rosa);
+    fill(claro);
     beginShape();
     vertex(0,    0,  0);
     vertex(0,   20,  0);
