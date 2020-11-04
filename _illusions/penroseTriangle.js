@@ -10,7 +10,25 @@ function setup() {
     vertex(0, 100, 100);
     vertex(0, 100, 0);
     endShape(CLOSE);
+
     beginShape();
+    fill(237, 34, 93);
+    vertex(0, 0, 0);
+    vertex(0, 0, 100);
+    vertex(300, 0, 100);
+    vertex(300, 0, 0);
+    endShape(CLOSE);
+
+    beginShape();
+    fill(237, 34, 93);
+    vertex(0, 100, 0);
+    vertex(0, 100, 100);
+    vertex(300, 100, 100);
+    vertex(300, 100, 0);
+    endShape(CLOSE);
+
+    beginShape();
+    fill(237, 34, 93);
     vertex(300, 0, 0);
     vertex(300, 0, 100);
     vertex(300, 100, 100);
@@ -19,7 +37,8 @@ function setup() {
 }
 
 function draw() {
-    rotateX(frameCount * 0.01);
-    rotateZ(frameCount * 0.01);
+    rotateX(frameCount);
+    rotateZ(frameCount);
+    rotateY(frameCount);
 }
 
