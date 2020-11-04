@@ -5,10 +5,11 @@ function setup() {
 }
 
 function draw() {
-    console.log(frameCount * 0.01);
+    console.log("X: "+ (mouseX * 0.001));
+    console.log("Y: "+ (mouseX * 0.001));
     clear();
-    rotateX(mouseX);
-    rotateY(mouseY);
+    rotateX(mouseX * 0.001);
+    rotateY(mouseY * 0.001);
     rotateZ(0);
 
     fill('#424242');
