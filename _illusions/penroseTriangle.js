@@ -7,13 +7,13 @@ function setup() {
 function draw() {
     beginShape();
     vertex(0, 0, 0);
-    vertex(0, 0, 10);
-    vertex(0, 10, 10);
-    vertex(0, 10, 0);
-    vertex(100, 0, 0);
-    vertex(100, 0, 10);
-    vertex(100, 10, 10);
-    vertex(100, 10, 0);
+    vertex(0, 0, 50);
+    vertex(0, 50, 50);
+    vertex(0, 50, 0);
+    vertex(200, 0, 0);
+    vertex(200, 0, 50);
+    vertex(200, 50, 50);
+    vertex(200, 50, 0);
     endShape();
 }
 
