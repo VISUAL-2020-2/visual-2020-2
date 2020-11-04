@@ -68,15 +68,6 @@ function drawLeft(){
     vertex(20,  -120,  0);
     endShape(CLOSE);
 
-    //Cara inferior
-    fill(oscuro);
-    beginShape();
-    vertex(0,   0,   0);
-    vertex(0,   0,   20);
-    vertex(20,  0,   20);
-    vertex(20,  0,   0);
-    endShape(CLOSE);
-
     //Cara frontal
     fill(claro);
     beginShape();
@@ -103,7 +94,7 @@ function drawRight(){
     beginShape();
     vertex(80,   20,   0);
     vertex(90,   20,   75);
-    vertex(100,  20,   80);
+    vertex(100,  20,   85);
     vertex(100,  20,   0);
     endShape(CLOSE);
 
