@@ -5,7 +5,7 @@ function setup() {
 }
 
 function draw() {
-    beginShape();
+    beginShape(TESS);
     vertex(0, 0, 0);
     vertex(0, 0, 100);
     vertex(0, 100, 100);
