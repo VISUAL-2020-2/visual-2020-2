@@ -34,5 +34,23 @@ function draw() {
     vertex(0,    0, 10);
     endShape(CLOSE);
     fill('#424242');
+    beginShape(TESS);
+    strokeWeight(3);
+    // X Y Z
+    vertex(10,  50, 10);
+    vertex(10,  50,  0);
+    vertex(10,   0,  0);
+    vertex(10,   0, 10);
+    endShape(CLOSE);
+
+    fill('#424242');
+    beginShape(TESS);
+    strokeWeight(3);
+    // X Y Z
+    vertex(50,  10,  0);
+    vertex(50,   0,  0);
+    vertex(50,   0, 50);
+    vertex(50,  10, 50);
+    endShape(CLOSE);
 }
 
