@@ -7,12 +7,12 @@ function setup() {
 
 function draw() {
     clear();
-    fill(237, 34, 93);
-    strokeWeight(3);
     rotateX(frameCount * 0.01);
     rotateY(frameCount * 0.01);
     rotateZ(frameCount * 0.01);
     beginShape();
+    fill('#424242');
+    strokeWeight(3);
     // X Y Z
     vertex(0,   0,  0);
     vertex(0,   0,  10);
@@ -21,6 +21,6 @@ function draw() {
     vertex(50,  0,  50);
     vertex(50,  0,  0);
     vertex(0,   0,  0);
-    endShape(CLOSE);
+    endShape();
 }
 
