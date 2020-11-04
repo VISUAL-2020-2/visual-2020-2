@@ -21,7 +21,7 @@ function draw() {
     rotateZ(0);
     noStroke();
     drawBottom();
-    drawRight();
+    drawLeft();
 }
 
 function drawBottom(){
@@ -82,7 +82,7 @@ function drawBottom(){
 
 }
 
-function drawRight(){
+function drawLeft(){
     //Cara derecha
     fill(medio);
     beginShape();
@@ -104,19 +104,19 @@ function drawRight(){
     //Cara superior
     fill(amarillo);
     beginShape();
-    vertex(0,   0,   0);
-    vertex(0,   0,   20);
-    vertex(20,  0,   20);
-    vertex(20,  0,   0);
+    vertex(0,   -80,   0);
+    vertex(0,   -80,   20);
+    vertex(20,  -80,   20);
+    vertex(20,  -80,   0);
     endShape(CLOSE);
 
     //Cara inferior
     fill(oscuro);
     beginShape();
-    vertex(0,   20,   0);
-    vertex(0,   20,   20);
-    vertex(20,  20,   20);
-    vertex(20,  20,   0);
+    vertex(0,   0,   0);
+    vertex(0,   0,   20);
+    vertex(20,  0,   20);
+    vertex(20,  0,   0);
     endShape(CLOSE);
 
     //Cara frontal
@@ -136,5 +136,62 @@ function drawRight(){
     vertex(0,   -80,  0);
     vertex(20,   -80, 0);
     vertex(20,   0,  0);
+    endShape(CLOSE);
+}
+
+function drawRight(){
+    //Cara derecha
+    fill(medio);
+    beginShape();
+    vertex(100,  0,   0);
+    vertex(100,  0,   100);
+    vertex(100,  20,  100);
+    vertex(100,  20,  0);
+    endShape(CLOSE);
+
+    //Cara izquierda
+    fill(azul);
+    beginShape();
+    vertex(80,  0,   0);
+    vertex(80,  0,   100);
+    vertex(80,  20,  100);
+    vertex(80,  20,  0);
+    endShape(CLOSE);
+
+    //Cara superior
+    fill(amarillo);
+    beginShape();
+    vertex(80,   0,   0);
+    vertex(80,   0,   100);
+    vertex(100,  0,   100);
+    vertex(100,  0,   0);
+    endShape(CLOSE);
+
+    //Cara inferior
+    fill(oscuro);
+    beginShape();
+    vertex(80,   20,   0);
+    vertex(80,   20,   100);
+    vertex(100,  20,   100);
+    vertex(100,  20,   0);
+    endShape(CLOSE);
+
+    //Cara frontal
+    fill(claro);
+    beginShape();
+    vertex(80,    0,  100);
+    vertex(80,   20,  100);
+    vertex(100,   20,  100);
+    vertex(100,   0,  100);
+    endShape(CLOSE);
+
+
+    //Cara posterior
+    fill(rosa);
+    beginShape();
+    vertex(80,    0,  0);
+    vertex(80,   20,  0);
+    vertex(100,   20, 0);
+    vertex(100,   0,  0);
     endShape(CLOSE);
 }
