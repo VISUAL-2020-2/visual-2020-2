@@ -19,7 +19,7 @@ function draw() {
     console.log("X: "+ (newx * 0.005));
     console.log("Y: "+ (newy * 0.005));
     clear();
-    if(newx*newx > 4000 || newx*newx > 4000){
+    if(newx*newx > 40000 || newx*newx > 40000){
         rotateX(0.5425);
         rotateY(-0.802833251953125);
     } else {
