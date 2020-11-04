@@ -10,7 +10,7 @@ function draw() {
     rotateX(frameCount * 0.01);
     rotateY(frameCount * 0.01);
     rotateZ(frameCount * 0.01);
-    beginShape();
+    beginShape(TESS);
     fill('#424242');
     strokeWeight(3);
     // X Y Z
