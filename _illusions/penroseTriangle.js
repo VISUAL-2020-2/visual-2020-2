@@ -12,10 +12,10 @@ function draw() {
     rotateY(frameCount * 0.01);
     rotateZ(frameCount * 0.01);
     beginShape();
-    vertex(0, 0);
-    vertex(0, 100);
-    vertex(100, 100);
-    vertex(100, 0);
+    vertex(0, 0, 0);
+    vertex(0, 100, 0);
+    vertex(100, 100, 0);
+    vertex(100, 0, 0);
     endShape(CLOSE);
 }
 
