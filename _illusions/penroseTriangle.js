@@ -15,9 +15,9 @@ function draw() {
     beginShape();
     // X Y Z
     vertex(0,   0,  0);
-    vertex(10,  0,  0);
-    vertex(10,  0,  40);
-    vertex(50,  0,  40);
+    vertex(0,   0,  10);
+    vertex(40,  0,  10);
+    vertex(40,  0,  50);
     vertex(50,  0,  50);
     vertex(50,  0,  0);
     vertex(0,   0,  0);
