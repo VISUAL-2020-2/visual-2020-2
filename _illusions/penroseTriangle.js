@@ -33,5 +33,6 @@ function draw() {
     vertex(0,   50, 10);
     vertex(0,    0, 10);
     endShape(CLOSE);
+    fill('#424242');
 }
 
