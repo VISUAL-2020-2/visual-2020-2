@@ -17,10 +17,10 @@ function draw() {
     vertex(0, 50, 0);
     vertex(50, 50, 0);
     vertex(50, 0, 0);
-    vertex(0, 0, 150);
-    vertex(0, 50, 150);
-    vertex(50, 50, 150);
     vertex(50, 0, 150);
+    vertex(50, 50, 150);
+    vertex(0, 50, 150);
+    vertex(0, 0, 150);
     endShape(CLOSE);
 }
 
