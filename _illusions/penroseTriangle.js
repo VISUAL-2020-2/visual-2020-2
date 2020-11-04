@@ -6,6 +6,7 @@ function setup() {
 }
 
 function draw() {
+    clear();
     normalMaterial();
     rotateX(frameCount * 0.01);
     rotateY(frameCount * 0.01);
