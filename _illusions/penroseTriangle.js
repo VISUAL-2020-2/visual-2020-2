@@ -5,11 +5,11 @@ function setup() {
 }
 
 function draw() {
-    console.log("X: "+ (mouseX * 0.001));
-    console.log("Y: "+ (mouseX * 0.001));
+    console.log("X: "+ (mouseX * 0.005));
+    console.log("Y: "+ (mouseX * 0.005));
     clear();
-    rotateX(mouseX * 0.001);
-    rotateY(mouseY * 0.001);
+    rotateX(mouseX * 0.005);
+    rotateY(mouseY * 0.005);
     rotateZ(0);
 
     fill('#424242');
