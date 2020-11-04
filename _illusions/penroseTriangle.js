@@ -13,11 +13,14 @@ function setup() {
 }
 
 function draw() {
-    console.log("X: "+ (mouseX * 0.005));
-    console.log("Y: "+ (mouseY * 0.005));
+    let newx = mouseX - 200;
+    let newy = mouseY - 200;
+
+    console.log("X: "+ (newx * 0.005));
+    console.log("Y: "+ (newy * 0.005));
     clear();
-    rotateX(mouseX * 0.005);
-    rotateY(mouseY * 0.005);
+    rotateX(newx * 0.005);
+    rotateY(newy * 0.005);
     rotateZ(0);
     noStroke();
     drawBottom();
@@ -26,15 +29,6 @@ function draw() {
 }
 
 function drawBottom(){
-    //Cara izquierda
-    fill(azul);
-    beginShape();
-    vertex(0,  0,   0);
-    vertex(0,  0,   20);
-    vertex(0,  20,  20);
-    vertex(0,  20,  0);
-    endShape(CLOSE);
-
     //Cara derecha
     fill(medio);
     beginShape();
@@ -42,15 +36,6 @@ function drawBottom(){
     vertex(100,  0,   20);
     vertex(100,  20,  20);
     vertex(100,  20,  0);
-    endShape(CLOSE);
-
-    //Cara superior
-    fill(amarillo);
-    beginShape();
-    vertex(0,    0,   0);
-    vertex(0,    0,   20);
-    vertex(100,  0,   20);
-    vertex(100,  0,   0);
     endShape(CLOSE);
 
     //Cara inferior
@@ -71,16 +56,6 @@ function drawBottom(){
     vertex(100,  0,  20);
     endShape(CLOSE);
 
-
-    //Cara posterior
-    fill(rosa);
-    beginShape();
-    vertex(0,    0,  0);
-    vertex(0,   20,  0);
-    vertex(100, 20,  0);
-    vertex(100,  0,  0);
-    endShape(CLOSE);
-
 }
 
 function drawLeft(){
@@ -91,24 +66,6 @@ function drawLeft(){
     vertex(20,  0,   20);
     vertex(20,  -80,  20);
     vertex(20,  -80,  0);
-    endShape(CLOSE);
-
-    //Cara izquierda
-    fill(azul);
-    beginShape();
-    vertex(0,  0,   0);
-    vertex(0,  0,   20);
-    vertex(0,  -80,  20);
-    vertex(0,  -80,  0);
-    endShape(CLOSE);
-
-    //Cara superior
-    fill(amarillo);
-    beginShape();
-    vertex(0,   -80,   0);
-    vertex(0,   -80,   20);
-    vertex(20,  -80,   20);
-    vertex(20,  -80,   0);
     endShape(CLOSE);
 
     //Cara inferior
@@ -129,15 +86,6 @@ function drawLeft(){
     vertex(20,   0,  20);
     endShape(CLOSE);
 
-
-    //Cara posterior
-    fill(rosa);
-    beginShape();
-    vertex(0,    0,  0);
-    vertex(0,   -80,  0);
-    vertex(20,   -80, 0);
-    vertex(20,   0,  0);
-    endShape(CLOSE);
 }
 
 function drawRight(){
@@ -148,24 +96,6 @@ function drawRight(){
     vertex(100,  0,   100);
     vertex(100,  20,  100);
     vertex(100,  20,  0);
-    endShape(CLOSE);
-
-    //Cara izquierda
-    fill(azul);
-    beginShape();
-    vertex(80,  0,   0);
-    vertex(80,  0,   100);
-    vertex(80,  20,  100);
-    vertex(80,  20,  0);
-    endShape(CLOSE);
-
-    //Cara superior
-    fill(amarillo);
-    beginShape();
-    vertex(80,   0,   0);
-    vertex(80,   0,   100);
-    vertex(100,  0,   100);
-    vertex(100,  0,   0);
     endShape(CLOSE);
 
     //Cara inferior
@@ -186,13 +116,4 @@ function drawRight(){
     vertex(100,   0,  100);
     endShape(CLOSE);
 
-
-    //Cara posterior
-    fill(rosa);
-    beginShape();
-    vertex(80,    0,  0);
-    vertex(80,   20,  0);
-    vertex(100,   20, 0);
-    vertex(100,   0,  0);
-    endShape(CLOSE);
 }
