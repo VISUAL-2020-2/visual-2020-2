@@ -8,7 +8,7 @@ function draw() {
     clear();
     rotateX(frameCount * 0.01);
     rotateY(frameCount * 0.01);
-    rotateZ(frameCount * 0.01);
+    rotateZ(60);
 
     fill('#424242');
     noStroke();
@@ -20,7 +20,7 @@ function draw() {
     vertex(100,  0,  100);
     vertex(100,  0,  0);
     vertex(0,   0,  0);
-    endShape(CLOSE);
+    endShape();
 
     fill('#848484');
     noStroke();
