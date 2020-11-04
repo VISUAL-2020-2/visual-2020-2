@@ -7,9 +7,9 @@ function setup() {
 function draw() {
     console.log(frameCount * 0.01);
     clear();
-    rotateX(0);
+    rotateX(1);
     rotateY(frameCount * 0.01);
-    rotateZ(1.5708);
+    rotateZ(0);
 
     fill('#424242');
     noStroke();
