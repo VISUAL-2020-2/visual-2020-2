@@ -16,12 +16,10 @@ function draw() {
     let newx = mouseX - 200;
     let newy = mouseY - 200;
 
-    console.log("X: "+ (newx * 0.005));
-    console.log("Y: "+ (newy * 0.005));
     clear();
     if(newx*newx > 50000 || newy*newy > 50000){
         rotateX(0.5425);
-        rotateY(-0.802833251953125);
+        rotateY(-0.802833251953);
     } else {
         rotateX(newx * 0.005);
         rotateY(newy * 0.005);
