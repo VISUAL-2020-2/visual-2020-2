@@ -5,6 +5,7 @@ let medio = '#848484';
 let oscuro = '#424242';
 let rosa = '#ffafaf';
 let azul = '#afc0ff';
+let amarillo = '#fff4af';
 
 function setup() {
     var canvas = createCanvas(400, 400, WEBGL); // Keep canvas reference
@@ -18,12 +19,13 @@ function draw() {
     rotateX(mouseX * 0.005);
     rotateY(mouseY * 0.005);
     rotateZ(0);
+    noStroke();
     drawBottom();
 }
 
 function drawBottom(){
     //Cara izquierda
-    fill(claro);
+    fill(azul);
     beginShape();
     vertex(0,  0,   0);
     vertex(0,  0,   20);
@@ -59,7 +61,7 @@ function drawBottom(){
     endShape(CLOSE)
 
     //Cara superior
-    fill(medio);
+    fill(amarillo);
     beginShape();
     vertex(0,    20,   0);
     vertex(0,    20,   20);
@@ -76,4 +78,15 @@ function drawBottom(){
     vertex(100,  0,  0);
     endShape(CLOSE)
 
+}
+
+function drawRight(){
+    //Cara izquierda
+    fill(claro);
+    beginShape();
+    vertex(20,  0,   0);
+    vertex(20,  0,   20);
+    vertex(20,  100,  20);
+    vertex(20,  100,  0);
+    endShape(CLOSE)
 }
