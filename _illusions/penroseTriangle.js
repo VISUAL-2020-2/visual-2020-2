@@ -21,6 +21,7 @@ function draw() {
     rotateZ(0);
     noStroke();
     drawBottom();
+    drawRight();
 }
 
 function drawBottom(){
