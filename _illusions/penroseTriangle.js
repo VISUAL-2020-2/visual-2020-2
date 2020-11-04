@@ -5,10 +5,11 @@ function setup() {
 }
 
 function draw() {
+    console.log(frameCount * 0.01);
     clear();
     rotateX(frameCount * 0.01);
-    rotateY(60);
-    rotateZ(60);
+    rotateY(0);
+    rotateZ(0);
 
     fill('#424242');
     noStroke();
