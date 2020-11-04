@@ -11,7 +11,7 @@ function setup() {
     vertex(300, 0, 100);
     vertex(300, 100, 100);
     vertex(300, 100, 0);
-    endShape();
+    endShape(CLOSE);
 }
 
 function draw() {
