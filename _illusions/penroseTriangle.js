@@ -12,15 +12,15 @@ function draw() {
     rotateX(frameCount * 0.01);
     rotateY(frameCount * 0.01);
     rotateZ(frameCount * 0.01);
-    beginShape(QUAD_STRIP);
-    vertex(0, 0, 0);
-    vertex(0, 50, 0);
-    vertex(50, 50, 0);
-    vertex(50, 0, 0);
-    vertex(50, 0, 150);
-    vertex(50, 50, 150);
-    vertex(0, 50, 150);
-    vertex(0, 0, 150);
+    beginShape();
+    // X Y Z
+    vertex(0,   0,  0);
+    vertex(10,  0,  0);
+    vertex(10,  0,  40);
+    vertex(50,  0,  40);
+    vertex(50,  0,  50);
+    vertex(50,  0,  0);
+    vertex(0,   0,  0);
     endShape(CLOSE);
 }
 
