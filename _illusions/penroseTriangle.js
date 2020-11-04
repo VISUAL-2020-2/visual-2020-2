@@ -15,7 +15,5 @@ function setup() {
 }
 
 function draw() {
-    rotateZ(frameCount * 0.01);
-    rotateX(frameCount * 0.01);
 }
 
