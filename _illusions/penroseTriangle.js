@@ -63,9 +63,9 @@ function drawLeft(){
     fill(medio);
     beginShape();
     vertex(20,  0,   0);
-    vertex(20,  0,   20);
-    vertex(20,  -80,  20);
-    vertex(20,  -80,  0);
+    vertex(20,  0,   30);
+    vertex(20,  -120,  30);
+    vertex(20,  -120,  0);
     endShape(CLOSE);
 
     //Cara inferior
@@ -81,8 +81,8 @@ function drawLeft(){
     fill(claro);
     beginShape();
     vertex(0,    0,  20);
-    vertex(0,   -80,  20);
-    vertex(20,   -80,  20);
+    vertex(0,   -120,  30);
+    vertex(20,   -120,  30);
     vertex(20,   0,  20);
     endShape(CLOSE);
 
