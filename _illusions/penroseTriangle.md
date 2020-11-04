@@ -2,7 +2,7 @@
 title: Penrose Triangle Illusion
 ---
 
-3 figures more fixed
+3 pretty figures
 
 <!-- Sketch file location, (pending organization) -->
 <script src="penroseTriangle.js"></script>
