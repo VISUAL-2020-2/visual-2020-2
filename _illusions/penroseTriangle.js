@@ -16,8 +16,6 @@ function draw() {
     vertex(0, 100, 0);
     vertex(100, 100, 0);
     vertex(100, 0, 0);
-    endShape(CLOSE);
-    beginShape();
     vertex(0, 0, 300);
     vertex(0, 100, 300);
     vertex(100, 100, 300);

@@ -2,7 +2,7 @@
 title: Penrose Triangle Illusion
 ---
 
-Description 4
+Description 0
 
 <!-- Sketch file location, (pending organization) -->
 <script src="penroseTriangle.js"></script>
