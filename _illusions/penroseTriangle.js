@@ -21,5 +21,6 @@ function draw() {
     endShape(CLOSE);
     rotateX(frameCount * 0.01);
     rotateY(frameCount * 0.01);
+    rotateZ(frameCount * 0.01);
 }
 
