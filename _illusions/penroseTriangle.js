@@ -22,6 +22,7 @@ function draw() {
     noStroke();
     drawBottom();
     drawLeft();
+    drawRight();
 }
 
 function drawBottom(){
@@ -98,7 +99,7 @@ function drawLeft(){
     vertex(0,  0,   0);
     vertex(0,  0,   20);
     vertex(0,  -80,  20);
-    vertex(0,  -70,  0);
+    vertex(0,  -80,  0);
     endShape(CLOSE);
 
     //Cara superior
