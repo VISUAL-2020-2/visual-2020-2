@@ -1,6 +1,7 @@
 let piramide;
 let pos=1.57*1.70;
 let zPositionValue=0
+let am=0
 function preload() {
   piramide = loadModel('assets/pir.obj', true);
 }
@@ -11,12 +12,12 @@ function setup() {
 }
 
 function draw() {
-  background(0);
+  background(am);
   
   xPositionValue = (mouseX - width / 2)*2;
   yPositionValue = (mouseY - height / 2)*2;
   noStroke()
-  ambientLight(0)
+  ambientLight(am)
   lightFalloff(1, 0.01,0);
   pointLight(255, 255, 255, xPositionValue, yPositionValue,zPositionValue);
   rotateX(pos)
@@ -37,6 +38,16 @@ function keyPressed() {
       zPositionValue = zPositionValue;
     } else{
       zPositionValue = zPositionValue - 100;
+    }
+  } else if (keyCode === RIGHT_ARROW) {
+      am = am+10;
+      if (am > 255) {
+        am = 255;
+      }
+  } else if (keyCode === LEFT_ARROW) {
+    am = am-10;
+    if (am < 0) {
+      am = 0;
     }
   }
 }
