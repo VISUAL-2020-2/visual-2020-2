@@ -24,14 +24,15 @@ function draw() {
   model(piramide)
 }
 
+
 function keyPressed() {
-  if (keyCode === DOWN_ARROW) {
+  if (keyCode === 98) {
     if (zPositionValue >= 1000){
       zPositionValue = zPositionValue;
     } else{
       zPositionValue = zPositionValue + 100;
     }
-  } else if (keyCode === UP_ARROW) {
+  } else if (keyCode === 104) {
     if (zPositionValue <= 0){
       zPositionValue = zPositionValue;
     } else{
