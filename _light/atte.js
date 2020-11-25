@@ -2,6 +2,7 @@ let piramide;
 let pos=1.57*1.70;
 let zPositionValue=0
 let am=0
+let spec=true
 function preload() {
   piramide = loadModel('assets/pir.obj', true);
 }
@@ -21,7 +22,11 @@ function draw() {
   lightFalloff(1, 0.01,0);
   pointLight(255, 255, 255, xPositionValue, yPositionValue,zPositionValue);
   rotateX(pos)
-  specularMaterial(255, 255, 0)
+  if(spec==true){
+    specularMaterial(255, 255, 0)
+  } else{
+    ambientMaterial(255, 255, 0)
+  }
   model(piramide)
 }
 
@@ -49,5 +54,7 @@ function keyPressed() {
     if (am < 0) {
       am = 0;
     }
+  } else if (keyCode === 71) {
+    spec=!spec
   }
 }
