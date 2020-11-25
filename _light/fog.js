@@ -36,8 +36,12 @@ function draw() {
 }
 
 function mouseMoved() {
-  f = mouseX*0.005;
-  if (brightness > 1) {
-    brightness = 1;
+  f = mouseX*0.003;
+  if (f > 1) {
+    f = 1;
+  }
+  if (f < 0) {
+    f = 0;
   }
 }
+
