@@ -7,7 +7,8 @@ function preload() {
 function setup() {
   var canvas = createCanvas(400, 400, WEBGL);
   canvas.parent('sketch-div');
-  zPosSlider = createSlider(-200, 0, 0, 0.1); 
+  zPosSlider = createSlider(-200, 0, 0, 0.1);
+  zPosSlider.parent('sketch-div');	 
   zPosSlider.position(20, 40);
 }
 

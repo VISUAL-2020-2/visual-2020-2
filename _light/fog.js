@@ -11,7 +11,8 @@ function setup() {
   var canvas = createCanvas(400, 400, WEBGL);
   canvas.parent('sketch-div');
   
-  slide = createSlider(0, 1, 0, 0.01); 
+  slide = createSlider(0, 1, 0, 0.01);
+  slide.parent('sketch-div');	 
   slide.position(20, 40);
   fogAmount=slide.value()
   shader(myShader);
