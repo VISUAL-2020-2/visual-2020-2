@@ -2,8 +2,8 @@ let myShader;
 let fogColor = [1, 1, 1, 1];
 function preload() {
 
-  myShader = loadShader("fog.vert", "fog.frag");
-  imgbase = loadImage("descarga.jpg");
+  myShader = loadShader("assets/fog.vert", "assets/fog.frag");
+  imgbase = loadImage("assets/descarga.jpg");
 }
 
 function setup() {

@@ -2,7 +2,7 @@ let piramide;
 let brightness=0;
 let pos=1.57*1.70;
 function preload() {
-  piramide = loadModel('pir.obj', true);
+  piramide = loadModel('assets/pir.obj', true);
 }
 
 function setup() {
