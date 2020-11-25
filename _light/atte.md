@@ -1,14 +1,11 @@
 ---
-title: Barberpole Illusion
+title: Light Attenuation
 ---
 
-The *Barberpole Illusion* is an optical illusion that occurs when a 
-diagonally stripped pole spins around it's vertical axis.
-
-Click inside the sketch to see the actual movement of the stripes.
+This is the light attenuation sketch, you can play with the light's position by moving your mouse all over the canvas, or changing it's depth with the sliter on the top-left.
 
 <!-- Sketch file location, (pending organization) -->
-<script src="barberpole.js"></script>
+<script src="atte.js"></script>
 <!-- Necessary element to position p5 canvas -->
 <div id="sketch-div"></div>
 

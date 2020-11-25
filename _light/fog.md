@@ -1,14 +1,11 @@
 ---
-title: Barberpole Illusion
+title: Fog
 ---
 
-The *Barberpole Illusion* is an optical illusion that occurs when a 
-diagonally stripped pole spins around it's vertical axis.
-
-Click inside the sketch to see the actual movement of the stripes.
+This is the fog sketch, you can change the amount of fog by moving the slider on the top-left.
 
 <!-- Sketch file location, (pending organization) -->
-<script src="barberpole.js"></script>
+<script src="fog.js"></script>
 <!-- Necessary element to position p5 canvas -->
 <div id="sketch-div"></div>
 
