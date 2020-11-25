@@ -9,7 +9,7 @@ function setup() {
   canvas.parent('sketch-div');
   zPosSlider = createSlider(-200, 0, 0, 0.1);
   zPosSlider.parent('sketch-div');	 
-  zPosSlider.position(20, 40);
+  zPosSlider.position(20, 80);
 }
 
 function draw() {

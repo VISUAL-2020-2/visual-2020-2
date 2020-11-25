@@ -1,5 +1,8 @@
+
 let myShader;
 let fogColor = [1, 1, 1, 1];
+let f=0;
+
 function preload() {
 
   myShader = loadShader("assets/fog.vert", "assets/fog.frag");
@@ -11,10 +14,7 @@ function setup() {
   var canvas = createCanvas(400, 400, WEBGL);
   canvas.parent('sketch-div');
   
-  slide = createSlider(0, 1, 0, 0.01);
-  slide.parent('sketch-div');	 
-  slide.position(20, 40);
-  fogAmount=slide.value()
+  fogAmount=f
   shader(myShader);
   myShader.setUniform("uMatcapTexture", imgbase);
   noStroke();
@@ -22,7 +22,7 @@ function setup() {
 
 function draw() {
   background(255);
-  fogAmount=slide.value()
+  fogAmount=f
 
   rotateX(frameCount * 0.01);
   rotateY(frameCount * 0.005);
@@ -35,3 +35,9 @@ function draw() {
   box(width / 2);
 }
 
+function mouseMoved() {
+  f = mouseX*0.005;
+  if (brightness > 1) {
+    brightness = 1;
+  }
+}
