@@ -16,7 +16,8 @@ The source code for this Jekyll site and all experiments shown can be found in
   Image analysis sketches.
 - [Optical Illusions](/illusions)\
   Interesting optical illusions.
-
+- [Light Shaders](/light)\
+  Light shaders experiments.
 ---
 
 Team:

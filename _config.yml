@@ -27,6 +27,9 @@ collections:
   illusions:
     output: true
     #permalink: /:collection/:name/
+  light:
+    output: true
+    #permalink: /:collection/:name/
 
 defaults:
   # _pages
@@ -56,6 +59,14 @@ defaults:
   - scope:
       path: ""
       type: illusions
+    values:
+      layout: single
+      author_profile: false
+      share: false
+  # _light
+  - scope:
+      path: ""
+      type: light
     values:
       layout: single
       author_profile: false
