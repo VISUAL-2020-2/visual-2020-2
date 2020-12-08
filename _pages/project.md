@@ -1,5 +1,5 @@
 ---
-title: Project
+title: Neural Network
 layout: collection
 permalink: /project/
 collection: project
