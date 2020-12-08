@@ -9,17 +9,14 @@ let flippedVideo;
 // To store the classification
 let label = "";
 
-function setupCanvas() {
-    var canvas = createCanvas(320, 260);
-    canvas.parent('sketch-div');
-}
-
 // Load the model first
 function preload() {
     classifier = ml5.imageClassifier(imageModelURL + 'model.json');
 }
 
 function setup() {
+    var canvas = createCanvas(500, 500);
+    canvas.parent('sketch-div');
     // Create the video
     video = createCapture(VIDEO);
     video.size(320, 240);
