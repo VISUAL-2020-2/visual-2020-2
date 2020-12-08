@@ -17,17 +17,14 @@ title: Neuronal Network
   // To store the classification
   let label = "";
 
-  function setupCanvas() {
-    let canvas = createCanvas(1000, 1000);
-    canvas.parent('sketch-div');
-  }
-
   // Load the model first
   function preload() {
     classifier = ml5.imageClassifier(imageModelURL + 'model.json');
   }
 
   function setup() {
+    var canvas = createCanvas(400, 400);
+    canvas.parent('sketch-div');
     // Create the video
     video = createCapture(VIDEO);
     video.size(320, 240);
