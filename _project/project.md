@@ -25,7 +25,7 @@ title: Neuronal Network
   }
 
   function setup() {
-    createCanvas(320, 260);
+    var canvas = createCanvas(320, 260);
     // Create the video
     video = createCapture(VIDEO);
     video.size(320, 240);
