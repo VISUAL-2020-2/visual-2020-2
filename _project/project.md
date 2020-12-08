@@ -18,8 +18,8 @@ title: Neuronal Network
   let label = "";
 
   function setupCanvas() {
-    var canvas = createCanvas(320, 260);
-    canvas.parent('project-div');
+    var canvas = createCanvas(400, 400);
+    canvas.parent('sketch-div');
   }
 
   // Load the model first
