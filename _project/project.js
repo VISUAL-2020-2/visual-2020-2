@@ -16,6 +16,7 @@ function preload() {
 
 function setup() {
     createCanvas(320, 260);
+    canvas.parent('project-div');
     // Create the video
     video = createCapture(VIDEO);
     video.size(320, 240);
