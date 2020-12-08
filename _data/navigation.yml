@@ -8,6 +8,6 @@ main:
   - title: "Light"
     url: /light/
   - title: "Project"
-  url: /project/
+    url: /project/
   - title: "GitHub"
     url: https://github.com/visual-2020-2/visual-2020-2.github.io
