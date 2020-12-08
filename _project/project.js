@@ -1,7 +1,7 @@
 // Classifier Variable
 let classifier;
 // Model URL
-let imageModelURL = './model/';
+let imageModelURL = 'https://teachablemachine.withgoogle.com/models/bXy2kDNi/';
 
 // Video
 let video;
@@ -11,7 +11,7 @@ let label = "";
 
 function setupCanvas() {
     var canvas = createCanvas(320, 260);
-    canvas.parent('project-div');
+    canvas.parent('sketch-div');
 }
 
 // Load the model first
