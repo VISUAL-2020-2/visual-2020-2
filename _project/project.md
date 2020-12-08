@@ -18,7 +18,7 @@ title: Neuronal Network
   let label = "";
 
   function setupCanvas() {
-    var canvas = createCanvas(400, 400);
+    let canvas = createCanvas(1000, 1000);
     canvas.parent('sketch-div');
   }
 
