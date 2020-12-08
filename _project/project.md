@@ -76,4 +76,4 @@ title: Neuronal Network
 <!-- Sketch file location, (pending organization) -->
 
 <!-- Necessary element to position p5 canvas -->
-<div id="project-div"></div>
+<div id="sketch-div"></div>
