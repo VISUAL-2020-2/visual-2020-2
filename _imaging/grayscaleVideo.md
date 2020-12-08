@@ -8,6 +8,8 @@ Here we have a grayscale filter:
 <script src="grayscaleVideo.js"></script>
 <!-- Necessary element to position p5 canvas -->
 <div id="sketch-div"></div>
+<!-- Video data-->
+<div id="sketch-div"></div>
 
 
 
