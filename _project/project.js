@@ -47,7 +47,6 @@ function gotResult(error, results) {
     return;
   }
   data = results;
-  drawHistogram();
 }
 
 function handleFile(file) {
