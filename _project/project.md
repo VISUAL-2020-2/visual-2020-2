@@ -2,7 +2,7 @@
 title: Neuronal Network
 ---
 
-We balanced a neuronal network in order of classify chest x-ray images
+We made an image classifying neural network
 
 <!-- Sketch file location, (pending organization) -->
 <script src="project.js"></script>

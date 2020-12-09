@@ -73,7 +73,8 @@ function drawHistogram(data) {
 }
 
 function drawRectange(label, pos, length) {
-  text(label, 50, pos*30+450);
+  textAlign(RIGHT);
+  text(label, 50, pos*30+420);
   fill(0);
-  rect(50, pos*30+450, length*300, 25);
+  rect(100, pos*30+400, length*200, 25);
 }
