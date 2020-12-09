@@ -11,52 +11,50 @@ let label = "";
 
 // Load the model first
 function preload() {
-    classifier = ml5.imageClassifier(imageModelURL + 'model.json');
+  img = loadImage("0101.jpeg");
+  classifier = ml5.imageClassifier(imageModelURL+'model.json');
 }
 
 function setup() {
-    var canvas = createCanvas(500, 500);
-    canvas.parent('sketch-div');
-    // Create the video
-    video = createCapture(VIDEO);
-    video.size(320, 240);
-    video.hide();
-
-    flippedVideo = ml5.flipImage(video);
-    // Start classifying
-    classifyVideo();
+  createCanvas(400, 400);
+  img.resize(400, 400);
+  flippedVideo = ml5.flipImage(img);
+  // Start classifying
+  classifyVideo();
+  var input = createFileInput(handleFile);
 }
 
 function draw() {
-    background(0);
-    // Draw the video
-    image(flippedVideo, 0, 0);
-
-    // Draw the label
-    fill(255);
-    textSize(16);
-    textAlign(CENTER);
-    text(label, width / 2, height - 4);
+  background(0);
+  // Draw the video
+  image(flippedVideo, 0, 0);
+  img.resize(400, 400);
+  // Draw the label
+  fill(255,0,0);
+  textSize(16);
+  textAlign(CENTER);
+  text(label, width / 2, height - 4);
 }
 
-// Get a prediction for the current video frame
 function classifyVideo() {
-    flippedVideo = ml5.flipImage(video)
-    classifier.classify(flippedVideo, gotResult);
-    flippedVideo.remove();
-
+  flippedVideo = ml5.flipImage(img)
+  classifier.classify(flippedVideo, gotResult);
+  flippedVideo.remove();
 }
 
-// When we get a result
 function gotResult(error, results) {
-    // If there is an error
-    if (error) {
-        console.error(error);
-        return;
-    }
-    // The results are in an array ordered by confidence.
-    // console.log(results[0]);
-    label = results[0].label;
-    // Classifiy again!
-    classifyVideo();
+  if (error) {
+    console.error(error);
+    return;
+  }
+  label = results[0].label;
+  classifyVideo();
+}
+function handleFile(file) {
+  if (file.type === 'image') {
+    img = loadImage(file.data);
+    img.resize(400, 400);
+  } else {
+    alert('The file selected is not an image');
+  }
 }
