@@ -7,9 +7,8 @@ let imageModelURL = 'data/model/';
 let video;
 let flippedVideo;
 // To store the classification
-let label = "";
 let img;
-let data = [];
+let data = [{label: "", confidence: 0}, {label: "", confidence: 0}, {label: "", confidence: 0}];
 // Load the model first
 function preload() {
   img = loadImage("0101.jpeg");
