@@ -23,6 +23,7 @@ function setup() {
   // Start classifying
   classifyVideo();
   var input = createFileInput(handleFile);
+  input.parent('histogram-div');
 }
 
 function draw() {
