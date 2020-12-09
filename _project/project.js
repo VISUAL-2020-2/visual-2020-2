@@ -64,11 +64,13 @@ function handleFile(file) {
 }
 
 function drawHistogram(data) {
-  drawRectange(data[0].label, 0, )
+  drawRectange(data[0].label, 0, data[0].confidence );
+  drawRectange(data[1].label, 0, data[1].confidence );
+  drawRectange(data[2].label, 0, data[2].confidence );
 }
 
 function drawRectange(label, pos, length) {
   text(label);
   fill(0);
-  rect(20, pos+400, length, 25);
+  rect(20, pos+400, length*300, 25);
 }
