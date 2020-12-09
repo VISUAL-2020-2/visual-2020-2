@@ -8,7 +8,7 @@ let video;
 let flippedVideo;
 // To store the classification
 let label = "";
-
+let img;
 // Load the model first
 function preload() {
   img = loadImage("0101.jpeg");
@@ -29,7 +29,7 @@ function setup() {
 function draw() {
   background(0);
   // Draw the video
-  image(flippedVideo, 0, 0);
+  image(img, 0, 0);
   img.resize(400, 400);
   // Draw the label
   fill(255,0,0);
@@ -61,4 +61,8 @@ function handleFile(file) {
   } else {
     alert('The file selected is not an image');
   }
+}
+
+function drawHistogram() {
+
 }
