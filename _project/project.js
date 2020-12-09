@@ -16,7 +16,7 @@ function preload() {
 }
 
 function setup() {
-  var canvas = createCanvas(400, 400);
+  var canvas = createCanvas(400, 700);
   canvas.parent('sketch-div');
   img.resize(400, 400);
   flippedVideo = ml5.flipImage(img);
