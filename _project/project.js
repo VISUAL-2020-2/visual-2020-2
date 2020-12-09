@@ -9,7 +9,7 @@ let flippedVideo;
 // To store the classification
 let label = "";
 let img;
-let data = 0;
+let data = [];
 // Load the model first
 function preload() {
   img = loadImage("0101.jpeg");
@@ -32,6 +32,7 @@ function draw() {
   // Draw the video
   image(img, 0, 0);
   img.resize(400, 400);
+  drawHistogram();
 }
 
 function classifyVideo() {
