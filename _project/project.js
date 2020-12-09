@@ -27,12 +27,11 @@ function setup() {
 }
 
 function draw() {
-  background(0);
+  clear();
   // Draw the video
   image(img, 0, 0);
   img.resize(400, 400);
   // Draw the label
-  fill(255,0,0);
   textSize(16);
   textAlign(CENTER);
   text(label, width / 2, height - 4);
@@ -51,6 +50,7 @@ function gotResult(error, results) {
     return;
   }
   label = results[0].label;
+  drawHistogram(results);
 }
 
 function handleFile(file) {
@@ -63,6 +63,12 @@ function handleFile(file) {
   }
 }
 
-function drawHistogram() {
+function drawHistogram(data) {
+  drawRectange(data[0].label, 0, )
+}
 
+function drawRectange(label, pos, length) {
+  text(label);
+  fill(0);
+  rect(20, pos+400, length, 25);
 }
