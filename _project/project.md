@@ -2,7 +2,7 @@
 title: Neuronal Network
 ---
 
-We made an image classifying neural network in order to facilitate
+We made an image classifying neural network in order to facilitate the diagnosis
 
 <!-- Sketch file location, (pending organization) -->
 <script src="project.js"></script>
