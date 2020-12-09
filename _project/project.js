@@ -9,6 +9,7 @@ let flippedVideo;
 // To store the classification
 let label = "";
 let img;
+let data;
 // Load the model first
 function preload() {
   img = loadImage("0101.jpeg");
@@ -21,7 +22,8 @@ function setup() {
   img.resize(400, 400);
   flippedVideo = ml5.flipImage(img);
   // Start classifying
-  classifyVideo();
+  classifyVideo()
+  drawRectange(data);
   var input = createFileInput(handleFile);
   input.parent('histogram-div');
 }
@@ -50,7 +52,6 @@ function gotResult(error, results) {
     return;
   }
   label = results[0].label;
-  drawHistogram(results);
 }
 
 function handleFile(file) {
