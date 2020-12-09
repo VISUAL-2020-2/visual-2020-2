@@ -17,7 +17,7 @@ function preload() {
 }
 
 function setup() {
-  var canvas = createCanvas(400, 700);
+  var canvas = createCanvas(400, 500);
   canvas.parent('sketch-div');
   img.resize(400, 400);
   flippedVideo = ml5.flipImage(img);
@@ -32,12 +32,6 @@ function draw() {
   // Draw the video
   image(img, 0, 0);
   img.resize(400, 400);
-  // Draw the label
-  textSize(16);
-  textAlign(CENTER);
-  text(label, width / 2, height - 4);
-  if(data != 0)
-    drawHistogram(data);
 }
 
 function classifyVideo() {
@@ -47,13 +41,12 @@ function classifyVideo() {
 }
 
 function gotResult(error, results) {
-  console.log(results);
   if (error) {
     console.error(error);
     return;
   }
-  label = results[0].label;
   data = results;
+  drawHistogram();
 }
 
 function handleFile(file) {
@@ -66,7 +59,7 @@ function handleFile(file) {
   }
 }
 
-function drawHistogram(data) {
+function drawHistogram() {
   drawRectange(data[0].label, 0, data[0].confidence );
   drawRectange(data[1].label, 1, data[1].confidence );
   drawRectange(data[2].label, 2, data[2].confidence );
@@ -78,5 +71,4 @@ function drawRectange(label, pos, length) {
   fill(0);
   rect(120, pos*30+410, length*200, 25);
   text(int(length*100)+"%", 130+length*200, pos*30+430);
-  console.log("Redrawing histogram");
 }
