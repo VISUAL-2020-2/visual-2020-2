@@ -2,7 +2,7 @@
 title: Neuronal Network
 ---
 
-We balanced a neuronal network in order of classify 
+We balanced a neuronal network in order of classify x-ray
 
 <!-- Sketch file location, (pending organization) -->
 <script src="project.js"></script>

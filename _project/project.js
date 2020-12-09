@@ -53,6 +53,7 @@ function gotResult(error, results) {
     return;
   }
   label = results[0].label;
+  data = results;
 }
 
 function handleFile(file) {
