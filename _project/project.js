@@ -50,6 +50,7 @@ function gotResult(error, results) {
 
 function handleFile(file) {
   if (file.type === 'image') {
+    data = [{label: "", confidence: 0}, {label: "", confidence: 0}, {label: "", confidence: 0}];
     img = loadImage(file.data);
     img.resize(400, 400);
     classifyVideo();
