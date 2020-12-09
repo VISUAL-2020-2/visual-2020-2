@@ -2,7 +2,7 @@
 title: Neuronal Network
 ---
 
-We made an image classifying neural network in order to facilitate the diagnosis of covid-19 
+We made an image classifying neural network in order to facilitate the diagnosis of covid-19 and
 
 <!-- Sketch file location, (pending organization) -->
 <script src="project.js"></script>

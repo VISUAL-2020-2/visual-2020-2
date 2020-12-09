@@ -22,7 +22,7 @@ function setup() {
   img.resize(400, 400);
   flippedVideo = ml5.flipImage(img);
   // Start classifying
-  classifyVideo()
+  classifyVideo();
   var input = createFileInput(handleFile);
   input.parent('histogram-div');
 }
@@ -60,6 +60,8 @@ function handleFile(file) {
 }
 
 function drawHistogram() {
+  console.log("Drawing histogram ^^");
+  console.log(data);
   drawRectange(data[0].label, 0, data[0].confidence );
   drawRectange(data[1].label, 1, data[1].confidence );
   drawRectange(data[2].label, 2, data[2].confidence );
