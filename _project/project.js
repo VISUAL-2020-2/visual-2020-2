@@ -21,6 +21,7 @@ function setup() {
   img.resize(400, 400);
   flippedVideo = ml5.flipImage(img);
   // Start classifying
+  classifyVideo();
   var input = createFileInput(handleFile);
   input.parent('histogram-div');
 }
@@ -50,13 +51,13 @@ function gotResult(error, results) {
     return;
   }
   label = results[0].label;
-  classifyVideo();
 }
 
 function handleFile(file) {
   if (file.type === 'image') {
     img = loadImage(file.data);
     img.resize(400, 400);
+    classifyVideo();
   } else {
     alert('The file selected is not an image');
   }
