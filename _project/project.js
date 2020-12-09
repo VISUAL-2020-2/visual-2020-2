@@ -31,7 +31,7 @@ function draw() {
   clear();
   // Draw the video
   image(img, 0, 0);
-  img.resize(100, 100);
+  img.resize(400, 400);
   // Draw the label
   textSize(16);
   textAlign(CENTER);
@@ -59,7 +59,7 @@ function gotResult(error, results) {
 function handleFile(file) {
   if (file.type === 'image') {
     img = loadImage(file.data);
-    img.resize(100, 100);
+    img.resize(400, 400);
     classifyVideo();
   } else {
     alert('The file selected is not an image');
@@ -68,12 +68,12 @@ function handleFile(file) {
 
 function drawHistogram(data) {
   drawRectange(data[0].label, 0, data[0].confidence );
-  drawRectange(data[1].label, 0, data[1].confidence );
-  drawRectange(data[2].label, 0, data[2].confidence );
+  drawRectange(data[1].label, 1, data[1].confidence );
+  drawRectange(data[2].label, 2, data[2].confidence );
 }
 
 function drawRectange(label, pos, length) {
   text(label);
   fill(0);
-  rect(20, pos+400, length*300, 25);
+  rect(50, pos+400, length*300, 25);
 }
