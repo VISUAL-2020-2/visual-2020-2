@@ -1,8 +1,6 @@
 ---
 title: Computación Visual 2020-2
 ---
-<script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
-
 This is our website for all things [Visual Computing](https://visualcomputing.github.io).
 
 The source code for this Jekyll site and all experiments shown can be found in
