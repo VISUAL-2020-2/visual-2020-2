@@ -73,5 +73,5 @@ function drawRectange(label, pos, length) {
   text(label, 0, pos*30+430);
   fill(0);
   rect(100, pos*30+410, length*250, 25);
-  text(int(length*100)+"%", 130+length*200, pos*30+430);
+  text((int(length*10000)/100)+"%", 110+length*200, pos*30+430);
 }
