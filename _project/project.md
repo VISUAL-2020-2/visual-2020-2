@@ -2,6 +2,8 @@
 title: Neuronal Network
 ---
 
+We balanced a neuronal network 
+
 <!-- Sketch file location, (pending organization) -->
 <script src="project.js"></script>
 <!-- Necessary element to position p5 canvas -->

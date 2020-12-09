@@ -56,7 +56,7 @@ function gotResult(error, results) {
 function handleFile(file) {
   if (file.type === 'image') {
     img = loadImage(file.data);
-    img.resize(400, 400);
+    img.resize(100, 100);
     classifyVideo();
   } else {
     alert('The file selected is not an image');
