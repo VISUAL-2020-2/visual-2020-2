@@ -31,6 +31,7 @@ function draw() {
   // Draw the video
   image(img, 0, 0);
   img.resize(400, 400);
+  classifyVideo();
   drawHistogram();
 }
 

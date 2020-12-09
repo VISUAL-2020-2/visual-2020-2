@@ -2,7 +2,7 @@
 title: Neuronal Network
 ---
 
-Image classifier neural network in order to facilitate the diagnosis of covid-19 and pneumonia.
+Image classifier neural network in order to facilitate the diagnosis of covid-19 and pneumonia. It returns
 
 <!-- Sketch file location, (pending organization) -->
 <script src="project.js"></script>
