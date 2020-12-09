@@ -2,7 +2,7 @@
 title: Neuronal Network
 ---
 
-We made an image classifying neural network in order of
+We made an image classifying neural network in order to facilitate
 
 <!-- Sketch file location, (pending organization) -->
 <script src="project.js"></script>
