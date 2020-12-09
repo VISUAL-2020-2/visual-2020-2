@@ -30,7 +30,7 @@ function draw() {
   clear();
   // Draw the video
   image(img, 0, 0);
-  img.resize(400, 400);
+  img.resize(100, 100);
   // Draw the label
   textSize(16);
   textAlign(CENTER);

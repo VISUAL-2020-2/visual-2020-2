@@ -2,7 +2,7 @@
 title: Neuronal Network
 ---
 
-We balanced a neuronal network 
+We balanced a neuronal network in order of
 
 <!-- Sketch file location, (pending organization) -->
 <script src="project.js"></script>
