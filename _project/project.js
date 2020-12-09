@@ -1,7 +1,7 @@
 // Classifier Variable
 let classifier;
 // Model URL
-let imageModelURL = './model/';
+let imageModelURL = 'data/model/';
 
 // Video
 let video;
